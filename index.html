@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yara Sherif · Opera</title>
+  <meta name="description" content="Yara Sherif — opera soloist. Concerts, performances and contact." />
+  <meta name="theme-color" content="#1a0508" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Yara Sherif — Opera Soloist" />
+  <meta property="og:description" content="Concerts · Performances · Booking" />
+  <meta property="og:url" content="https://yuyush2009-netizen.github.io/yara-opera-/" />
+  <meta property="og:image" content="https://yuyush2009-netizen.github.io/yara-opera-/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="fonts/fonts.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button class="lang" id="langToggle" type="button" aria-label="Switch language">ع</button>
+
+  <!-- HERO / CURTAIN -->
+  <header class="hero" id="top">
+    <div class="curtain left" aria-hidden="true"></div>
+    <div class="curtain right" aria-hidden="true"></div>
+    <div class="spot" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="overture" data-i18n="overture"></p>
+      <h1 class="name" data-bind="name"></h1>
+      <p class="title" data-bind="title"></p>
+      <img class="portrait" id="portrait" alt="" />
+      <svg class="staff" viewBox="0 0 600 60" aria-hidden="true" preserveAspectRatio="none">
+        <g stroke="currentColor" stroke-width="1"><line x1="0" y1="10" x2="600" y2="10"/><line x1="0" y1="20" x2="600" y2="20"/><line x1="0" y1="30" x2="600" y2="30"/><line x1="0" y1="40" x2="600" y2="40"/><line x1="0" y1="50" x2="600" y2="50"/></g>
+      </svg>
+      <nav class="hero-nav">
+        <a href="#about" data-i18n="nav.about"></a>
+        <a href="#concerts" data-i18n="nav.concerts"></a>
+        <a href="#contact" data-i18n="nav.contact"></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ABOUT -->
+    <section class="about wrap" id="about">
+      <p class="eyebrow" data-i18n="act1"></p>
+      <h2 data-i18n="about.title"></h2>
+      <blockquote class="quote" data-bind="quote"></blockquote>
+      <p class="about-text" data-bind="about"></p>
+      <dl class="stats" id="stats"></dl>
+    </section>
+
+    <!-- CONCERTS -->
+    <section class="concerts" id="concerts">
+      <div class="wrap">
+        <p class="eyebrow" data-i18n="act2"></p>
+        <h2 data-i18n="concerts.title"></h2>
+        <p class="sub" data-i18n="concerts.sub"></p>
+      </div>
+      <ol class="timeline wrap" id="timeline"></ol>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact wrap" id="contact">
+      <p class="eyebrow" data-i18n="finale"></p>
+      <h2 data-i18n="contact.title"></h2>
+      <p class="sub" data-i18n="contact.sub"></p>
+      <div class="contact-links" id="contactLinks"></div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span class="fermata" aria-hidden="true">𝄐</span>
+    <span>© <span id="year"></span> <span data-bind="name"></span></span>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
